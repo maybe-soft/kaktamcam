@@ -1,0 +1,41 @@
+{
+  "name": "henta-sample-bot",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build:rollup": "rollup --config",
+    "dev": "rollup --config --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-run": "^3.0.1",
+    "@rollup/plugin-terser": "^0.1.0",
+    "@swc/core": "^1.3.14",
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "pino-pretty": "^9.1.1",
+    "prettier": "^2.8.7",
+    "rollup": "^3.5.1",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-ts": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@henta/bot": "^0.1.0",
+    "@henta/botcmd": "^0.1.1",
+    "@henta/core": "^4.0.0-rc1",
+    "@henta/input": "^0.1.2",
+    "@henta/mentions": "^0.1.2",
+    "@henta/platform-tg": "^0.1.4",
+    "dotenv": "^16.0.3",
+    "pino": "^8.11.0"
+  }
+}
