@@ -35,7 +35,11 @@
     "@henta/input": "^0.1.2",
     "@henta/mentions": "^0.1.2",
     "@henta/platform-tg": "^0.1.4",
+    "@rollup/plugin-typescript": "^11.1.5",
     "dotenv": "^16.0.3",
-    "pino": "^8.11.0"
+    "onvif": "^0.6.9",
+    "pino": "^8.11.0",
+    "typedi": "^0.10.0",
+    "typeorm": "^0.3.17"
   }
 }

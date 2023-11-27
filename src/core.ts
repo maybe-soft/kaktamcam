@@ -5,7 +5,9 @@ import TelegramPlatform from '@henta/platform-tg';
 import { answerMiddlewares, botMiddlewares } from './middlewares';
 import logger from './infrastructure/logger';
 import initViews from './views/views';
+import { Service } from 'typedi';
 
+@Service()
 export default class Core {
   public hentaBot = new HentaBot(process.env.MODE as BotMode);
   public botcmdContainer = new BotcmdContainer();

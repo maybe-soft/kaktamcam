@@ -1,4 +1,4 @@
-import ts from 'rollup-plugin-ts';
+import ts from '@rollup/plugin-typescript';
 import json from '@rollup/plugin-json';
 import progress from 'rollup-plugin-progress';
 import terser from '@rollup/plugin-terser';
@@ -14,11 +14,7 @@ export default {
   },
   plugins: [
     progress(),
-    ts({
-      tsconfig: './tsconfig.json',
-      transpileOnly: true,
-      browserslist: false,
-    }),
+    ts(),
     json(),
     !isDev &&
       terser({
